@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Unrivaled Growth - Be The One Featured Columbus [Pizzeria] - Green Theme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --charcoal: #333333;            /* For general body text on light backgrounds */
+            --primary-green: #388E3C;      /* Main green, replaces gold */
+            --primary-green-light: #66BB6A; /* Lighter main green, for hovers/accents, replaces gold-light */
+            --dark-green-bg: #1B5E20;       /* Darkest green, for dark backgrounds, replaces navy */
+            --dark-green-text: #2E7D32;     /* Dark green for text/headings on light BGs, replaces navy text */
+            --light-green-bg: #F1F8E9;      /* Very light green for main page background, replaces cream */
+            --white: #ffffff;               /* White */
+            --success-green: #4CAF50;       /* For success messages, replaces old green-accent */
+            --accent-green: #A5D6A7;        /* A softer accent green for subtle highlights */
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--charcoal);
+            background-color: var(--light-green-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--dark-green-text);
+            line-height: 1.3;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #000000;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--primary-green);
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span { /* This was empty, if text is added, it will be white */
+            color: var(--white);
+        }
+
+        .logo-icon { /* Using Font Awesome icon */
+            margin-right: 10px;
+            font-size: 28px; /* Adjusted size */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-green-light);
+        }
+
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary-green-light);
+            bottom: -5px;
+            left: 0;
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        .nav-cta-button { /* Styling for the "Get Started Free" button in nav */
+            background-color: var(--primary-green);
+            color: var(--white) !important; /* Ensure text is white on green button */
+            padding: 8px 18px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .nav-cta-button:hover {
+            background-color: var(--primary-green-light);
+            color: var(--white) !important;
+            transform: translateY(-2px);
+        }
+        .nav-cta-button:after { /* Remove underline effect for button */
+            display: none;
+        }
+
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            /* Overlay uses dark-green-bg's RGB: (27, 94, 32) */
+            background: linear-gradient(rgb(99 99 99 / 75%), rgb(0 0 0 / 75%)),
+                        url('https://media.istockphoto.com/id/1300972549/photo/two-workers-international-team-members-share-success-help-one-another.jpg?s=612x612&w=0&k=20&c=_eVlRNKcQ-l4P9s1OQhKB1gEXaVYQdde1qXu6B4lwi4=') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding-top: 80px; /* Account for fixed header */
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 25px;
+            color: var(--white);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 .highlight-green { /* Updated class from highlight-gold */
+            color: var(--primary-green-light); /* Using a lighter green for highlight on dark overlay */
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 35px;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero p strong {
+            color: var(--primary-green-light);
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 35px;
+            background-color: var(--primary-green);
+            color: var(--white); /* Changed from navy for better contrast */
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-green-light);
+            color: var(--white); /* Ensure text remains white on hover */
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-green-light); /* Use lighter green for outline button on dark hero */
+            color: var(--primary-green-light);  /* Use lighter green for outline button on dark hero */
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-green-light);
+            color: var(--dark-green-bg); /* Dark text on light green hover */
+        }
+        .hero-ctas .btn { margin: 0 10px; }
+
+        /* Guarantee Box in Hero */
+        .hero-guarantee-box {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.4);
+            border-radius: 8px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid var(--primary-green-light);
+        }
+        .hero-guarantee-box h3 {
+            color: var(--primary-green-light);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .hero-guarantee-box p {
+            color: var(--white); /* Changed from cream for better visibility */
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+        .hero-guarantee-box .fas {
+            margin-right: 8px;
+            color: var(--primary-green-light);
+        }
+
+
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+            background-color: var(--white); /* Keep white for contrast with light-green-bg body */
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-green);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background-color: var(--light-green-bg); /* Use light green for cards */
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(46, 125, 50, 0.1); /* Greenish shadow */
+        }
+
+        .feature-icon {
+            font-size: 45px;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--dark-green-text);
+        }
+
+        .feature-card p {
+            color: var(--charcoal); /* Use charcoal for readability */
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 80px 0;
+            background-color: var(--dark-green-bg);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .stats h2 {
+            color: var(--white);
+            margin-bottom: 50px;
+            font-size: 2.8rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-item h3 {
+            font-size: 3.5rem;
+            color: var(--primary-green-light); /* Lighter green for stats numbers */
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+            background-color: var(--light-green-bg); /* Main page background */
+        }
+        .pricing-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .toggle-label {
+            margin: 0 15px;
+            font-weight: 500;
+            color: var(--charcoal); /* Darker for inactive */
+            font-size: 1.1rem;
+        }
+        .toggle-label.active {
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: var(--primary-green);
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px var(--primary-green);
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .pricing-card {
+            background-color: var(--white); /* Cards on light green bg */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(46, 125, 50, 0.1); /* Greenish shadow */
+        }
+
+        .pricing-card.popular {
+            border: 3px solid var(--primary-green);
+            transform: scale(1.03);
+        }
+        .pricing-card.popular:hover {
+            transform: translateY(-10px) scale(1.03);
+        }
+
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary-green);
+            color: var(--white); /* White text on green badge */
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            z-index: 1;
+        }
+
+        .pricing-header {
+            padding: 40px 30px 30px;
+            background-color: var(--dark-green-bg);
+            color: var(--white);
+            text-align: center;
+        }
+        .pricing-card.popular .pricing-header {
+            background-color: var(--primary-green); /* Popular plan header green */
+        }
+        .pricing-card.popular .pricing-header h3,
+        .pricing-card.popular .pricing-header .price {
+            color: var(--white); /* White text on green background */
+        }
+        .pricing-card.popular .pricing-header .price span {
+            color: var(--light-green-bg); /* Light green for sub-text on primary green */
+        }
+
+
+        .pricing-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--white); /* Default card header title */
+        }
+
+        .price {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 15px 0;
+            color: var(--primary-green-light); /* Lighter green for price on dark green header */
+        }
+
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            opacity: 0.8;
+            color: var(--white); /* White for sub-text on dark green header */
+        }
+        .price .save-info {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--success-green); /* Success green for savings */
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+
+        .pricing-body {
+            padding: 30px;
+            flex-grow: 1;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+            color: var(--charcoal);
+        }
+        .pricing-features li:last-child{
+            border-bottom: none;
+        }
+
+        .pricing-features li .fas {
+            color: var(--primary-green);
+            margin-right: 12px;
+            font-weight: bold;
+        }
+
+        .pricing-footer {
+            padding: 0 30px 30px;
+            text-align: center;
+            margin-top: auto;
+        }
+        .pricing-footer .btn {
+            width: 100%;
+        }
+
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--white); /* Keep white for contrast */
+        }
+
+        .testimonial-slider-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .testimonial {
+            background-color: var(--light-green-bg); /* Light green for testimonial cards */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin: 0 15px;
+            max-width: 800px;
+            min-width: 100%;
+            flex-shrink: 0;
+        }
+
+        .testimonial-content {
+            font-size: 1.15rem;
+            font-style: italic;
+            margin-bottom: 25px;
+            color: var(--charcoal);
+            line-height: 1.7;
+        }
+        .testimonial-content:before, .testimonial-content:after {
+            content: '"';
+            color: var(--primary-green);
+            font-size: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .testimonial-content:before { margin-right: 5px; }
+        .testimonial-content:after { margin-left: 5px; }
+
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .author-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 2px solid var(--primary-green); /* Green border */
+        }
+
+        .author-info h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+            color: var(--dark-green-text);
+        }
+
+        .author-info p {
+            color: var(--charcoal);
+            font-size: 0.95rem;
+        }
+        .author-info .success-metric {
+            color: var(--primary-green);
+            font-weight: bold;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            /* Overlay uses dark-green-bg's RGB: (27, 94, 32) */
+            background: linear-gradient(rgba(27, 94, 32, 0.9), rgb(0 0 0 / 90%)),
+                        url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 2.8rem;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 35px;
+            opacity: 0.95;
+            font-size: 1.15rem;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 100px 0;
+            background-color: var(--light-green-bg); /* Main page background */
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--white); /* Form on white card */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(46, 125, 50, 0.1); /* Greenish shadow */
+        }
+
+        .form-header {
+            padding: 40px 30px;
+            background-color: var(--dark-green-bg);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .form-header h3 {
+            color: var(--white);
+            font-size: 1.8rem;
+        }
+        .form-header p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .form-body {
+            padding: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--charcoal);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: var(--transition);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-green);
+            outline: none;
+            /* RGB for #388E3C is 56, 142, 60 */
+            box-shadow: 0 0 0 3px rgba(56, 142, 60, 0.25);
+        }
+        textarea.form-control {
+            min-height: 120px;
+        }
+
+        .form-footer {
+            padding: 0 40px 40px;
+            text-align: center;
+        }
+        .form-footer .btn {
+            width: 100%;
+        }
+        .form-footer .trial-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 15px;
+        }
+
+
+        .security-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .security-badge {
+            max-width: 120px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .security-badge:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background-color: var(--white); /* Keep white for contrast */
+        }
+
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eee;
+        }
+
+        .accordion-header {
+            padding: 20px 25px;
+            background-color: var(--light-green-bg); /* Light green for accordion header */
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 1.15rem;
+            color: var(--dark-green-text);
+        }
+
+        .accordion-header:hover {
+            background-color: var(--accent-green); /* Slightly darker/accent green on hover */
+        }
+
+        .accordion-header:after {
+            font-family: "Font Awesome 6 Free";
+            content: '\f067'; /* Plus icon */
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: var(--primary-green);
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active:after {
+            content: '\f068'; /* Minus icon */
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            background-color: var(--white); /* Content area white */
+        }
+        .accordion-header.active + .accordion-content {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+
+        .accordion-content-inner {
+            padding: 10px 0;
+            color: var(--charcoal);
+            line-height: 1.7;
+        }
+
+        /* Guarantee Section (Standalone) */
+        .guarantee-section {
+            padding: 80px 0;
+            background-color: var(--primary-green-light); /* Use a prominent light green */
+            text-align: center;
+        }
+
+        .guarantee-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .guarantee-icon {
+            font-size: 50px;
+            color: var(--dark-green-bg); /* Dark green icon on light green bg */
+        }
+
+        .guarantee-text h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--dark-green-bg); /* Dark green text on light green bg */
+        }
+
+        .guarantee-text p {
+            color: var(--dark-green-text); /* Darker text for better contrast */
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col.about-col p {
+            color: #fff;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .footer-col h4 {
+            color: var(--primary-green-light); /* Lighter green for footer headings */
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-green-light);
+            padding-left: 5px;
+        }
+        .footer-col .contact-info li {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+        }
+        .footer-col .contact-info li .fas {
+            color: var(--primary-green-light);
+            margin-right: 10px;
+            width: 20px;
+        }
+
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        .footer-bottom a {
+            color: var(--primary-green-light);
+            text-decoration: none;
+        }
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero p {
+                font-size: 1.15rem;
+            }
+            .pricing-cards {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            nav ul {
+                position: fixed;
+                top: 76px; /* Adjusted for header padding */
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 76px);
+                background-color: var(--dark-green-bg); /* Mobile menu dark green */
+                flex-direction: column;
+                align-items: center;
+                padding-top: 40px;
+                transition: var(--transition);
+                z-index: 999;
+            }
+            nav ul.active {
+                left: 0;
+            }
+            nav ul li {
+                margin: 20px 0;
+            }
+            .nav-cta-button {
+                padding: 12px 25px;
+                font-size: 1.1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .hero-ctas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-ctas .btn {
+                margin: 10px 0;
+                width: 80%;
+                max-width: 300px;
+            }
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            .features-grid, .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+            .pricing-card.popular {
+                transform: scale(1);
+            }
+            .pricing-card.popular:hover {
+                transform: translateY(-10px) scale(1);
+            }
+
+            .guarantee-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-col ul {
+                padding-left: 0;
+            }
+            .footer-col .contact-info li {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero {
+                min-height: 600px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 14px 28px;
+                font-size: 0.95rem;
+            }
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            .section-title p {
+                font-size: 1rem;
+            }
+            .form-body, .form-footer {
+                padding: 30px 20px;
+            }
+            .testimonial {
+                padding: 30px 20px;
+            }
+            .testimonial-content {
+                font-size: 1.05rem;
+            }
+            .author-img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-star logo-icon"></i> <span></span>TRC
+            </a>
+            <button class="mobile-menu-btn" aria-label="Open Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#features">Benefits</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#testimonials">Success Stories</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#form" class="nav-cta-button">Start Free Trial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Be The <span class="highlight-green">One Featured</span> Columbus Reputation Leader!</h1>
+            <p>We partner with <strong>only one [Pizzeria]</strong> in <strong>Columbus</strong>.
+                Claim your exclusive spot to accelerate review growth, dominate the local market, and enjoy 100% satisfaction guaranteed.
+            </p>
+            <div class="hero-ctas">
+                <a href="#form" class="btn">Start Your Free Trial Now</a>
+                <a href="#guarantee-main" class="btn btn-outline">Our Guarantee</a>
+            </div>
+            <div class="hero-guarantee-box">
+                <h3><i class="fas fa-shield-alt"></i>Risk-Free Promise</h3>
+                <p>Accelerated review growth & 100% satisfaction GUARANTEED or your money back. Try it risk-free!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Premier Advantage You'll Receive</h2>
+                <p>As the exclusively featured Columbus [Pizzeria], you'll unlock these powerful benefits designed to elevate your business.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Exclusive Local Feature</h3>
+                    <p>Be the *only* [Pizzeria] in Columbus we partner with. Unmatched visibility.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Accelerated Review Growth</h3>
+                    <p>Our system is designed to significantly boost your positive online reviews, quickly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>100% Satisfaction Guarantee</h3>
+                    <p>We stand by our results. If you're not satisfied, you get your money back. No risk.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Dedicated Review Survey</h3>
+                    <p>Easy-to-use survey tools that encourage every satisfied customer to share their positive experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-qrcode"></i></div>
+                    <h3>Custom QR Codes & Links</h3>
+                    <p>Printed materials and digital links make it effortless for customers to leave reviews.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Valuable Customer Insights</h3>
+                    <p>Understand your customers better and make data-driven decisions to improve your service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <h2>Proven Results for Local Businesses Like Yours</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>4.9★</h3>
+                    <p>Average Rating Achieved</p>
+                </div>
+                <div class="stat-item">
+                    <h3>+150%</h3>
+                    <p>Typical Review Growth</p>
+                </div>
+                <div class="stat-item">
+                    <h3>+75%</h3>
+                    <p>Increase in New Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Top #1</h3>
+                    <p>Ranking in Local Area</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Choose Your Path to Reputation Excellence</h2>
+                <p>Select the plan that best suits your business goals. All plans include our 100% Satisfaction Guarantee. <br/><strong>Start with a 14-Day Free Trial on our most popular plan!</strong></p>
+            </div>
+
+            <div class="pricing-toggle">
+                <span class="toggle-label active">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricing-toggle-checkbox"> <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Annual (Save up to 40%)</span>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price" data-monthly="$97" data-annually="$77">
+                            $97<span>/month</span>
+                        </div>
+                        <p>Perfect for getting started</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Up to 50 reviews per month</li>
+                            <li><i class="fas fa-check"></i> 2 reputation visits monthly</li>
+                            <li><i class="fas fa-check"></i> Basic review monitoring</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                            <li><i class="fas fa-check"></i> Monthly reputation report</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#form" class="btn btn-outline">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card popular">
+                    <div class="popular-badge" style="background-color: #fff; color: #000; margin-top: 10px;">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price" data-monthly="$197" data-annually="$157">
+                            $197<span>/month</span>
+                            <span class="save-info"></span> </div>
+                        <p>Best value + Free Trial</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> <strong style="color:var(--primary-green);">14-Day FREE Trial</strong></li>
+                            <li><i class="fas fa-check"></i> Unlimited reviews</li>
+                            <li><i class="fas fa-check"></i> Weekly reputation visits</li>
+                            <li><i class="fas fa-check"></i> Advanced review management</li>
+                            <li><i class="fas fa-check"></i> Competitor analysis</li>
+                            <li><i class="fas fa-check"></i> Negative review protection</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#form" class="btn">Start Free Trial</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price" data-monthly="$297" data-annually="$237">
+                            $297<span>/month</span>
+                            <span class="save-info"></span> </div>
+                        <p>For established businesses</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> All Professional Features, plus:</li>
+                            <li><i class="fas fa-check"></i> Multi-location support (if appl.)</li>
+                            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                            <li><i class="fas fa-check"></i> Custom reporting</li>
+                            <li><i class="fas fa-check"></i> Reputation crisis management</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#form" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:30px; font-size: 1.1rem;">
+                <i class="fas fa-shield-alt" style="color:var(--primary-green);"></i> All plans are backed by our <strong>100% Money-Back Guarantee</strong>. Try it risk-free!
+            </p>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Success Stories from Columbus Businesses</h2>
+                <p>Don't just take our word for it. Here's what our clients say about becoming the featured leader.</p>
+            </div>
+
+            <div class="testimonial-slider-container">
+                <div class="testimonial-track">
+                    <div class="testimonial">
+                        <p class="testimonial-content">Since becoming the exclusive featured Pizzeria, our average rating shot from 3.8 to 4.9 stars! We've seen a 40% increase in new customers. It's incredible!</p>
+                        <div class="testimonial-author">
+                            <img src="https://placehold.co/100x100/388E3C/FFFFFF?text=MS" alt="Michael S." class="author-img">
+                            <div class="author-info">
+                                <h4>Michael S.</h4>
+                                <p>Owner, [Example Pizzeria Name], Columbus</p>
+                                <p class="success-metric"><i class="fas fa-star"></i> Rating: 3.8 <i class="fas fa-long-arrow-alt-right"></i> 4.9 Stars</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p class="testimonial-content">The 'one featured business' model is genius. Our cafe bookings are up by 75% since we joined. The risk-free trial made it an easy decision.</p>
+                        <div class="testimonial-author">
+                             <img src="https://placehold.co/100x100/388E3C/FFFFFF?text=SJ" alt="Sarah J." class="author-img">
+                            <div class="author-info">
+                                <h4>Sarah J.</h4>
+                                <p>CEO, [Example Cafe Name], Columbus</p>
+                                <p class="success-metric"><i class="fas fa-users"></i> New Customers: +75%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <p class="testimonial-content">The satisfaction guarantee gave us peace of mind. Our reviews have never been better, and we are now the top-rated [Service Type] in our part of Columbus!</p>
+                        <div class="testimonial-author">
+                             <img src="https://placehold.co/100x100/388E3C/FFFFFF?text=DL" alt="David L." class="author-img">
+                            <div class="author-info">
+                                <h4>David L.</h4>
+                                <p>Manager, [Example Service Co.], Columbus</p>
+                                <p class="success-metric"><i class="fas fa-chart-line"></i> Review Volume: +200%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Be The <span style="color:var(--primary-green-light);">Only</span> Featured [Pizzeria] in Columbus?</h2>
+            <p>Claim your exclusive spot, enjoy accelerated review growth, and benefit from our 100% satisfaction guarantee. Limited spots available to ensure maximum impact for our partners.</p>
+            <a href="#form" class="btn">Start Your Free Trial Today!</a>
+        </div>
+    </section>
+
+    <section class="form-section" id="form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h3>Secure Your Spot & Start Your Free Trial</h3>
+                    <p>Complete this form to apply for the exclusive Columbus [Pizzeria] feature. A representative will contact you within 24 hours.</p>
+                </div>
+                <form class="form-body" id="applicationForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required placeholder="e.g., Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="business">Business Name</label>
+                        <input type="text" id="business" name="businessName" class="form-control" required placeholder="e.g., My Columbus Pizzeria">
+                    </div>
+                    <div class="form-group">
+                        <label for="business_type">Business Type</label>
+                        <input type="text" id="business_type" name="businessType" class="form-control" required value="Pizzeria" placeholder="e.g., Pizzeria, Cafe, Salon">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="e.g., jane.doe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="e.g., (614) 555-1234">
+                    </div>
+                    <div class="form-group">
+                        <label for="plan">Preferred Plan (Trial applies to Professional)</label>
+                        <select id="plan" name="plan" class="form-control" required>
+                            <option value="">-- Select a Plan --</option>
+                            <option value="starter_monthly">Starter - Monthly</option>
+                            <option value="professional_trial">Professional - 14 Day Free Trial</option>
+                            <option value="enterprise_monthly">Enterprise - Monthly</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Information (Optional)</label>
+                        <textarea id="message" name="message" class="form-control" rows="3" placeholder="Tell us a bit about your business or any questions..."></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit" class="btn">Claim My Free Trial & Exclusive Spot</button>
+                        <p class="trial-note">Your 14-day trial (for Professional Plan) is 100% free. No credit card required to start.</p>
+                        <div class="security-badges">
+                            <img src="https://placehold.co/120x60/F1F8E9/1B5E20?text=TrustedSite" alt="TrustedSite" class="security-badge">
+                            <img src="https://placehold.co/120x60/F1F8E9/1B5E20?text=Secure" alt="Certified Secure" class="security-badge">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about the Columbus Reputation Leaders program.</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">What does "One Featured Columbus Pizzeria" mean?</div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>It means we partner with only ONE pizzeria within the Columbus area for this exclusive program. This ensures that our efforts are hyper-focused on making your pizzeria the undeniable reputation leader, without diluting results by working with your direct competitors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">How does the 100% Satisfaction Guarantee work?</div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>We are confident in our ability to deliver accelerated review growth and significantly enhance your online reputation. If, after the first 30 days of your paid plan, you are not 100% satisfied with our service or the results, we will provide a full refund. It's completely risk-free for you to try.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">What is included in the Free Trial?</div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>The 14-Day Free Trial applies to our Professional Plan. You'll get full access to its features, including unlimited review collection, weekly reputation visits, advanced review management, and more, allowing you to experience the benefits firsthand before committing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">How soon will I see results?</div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Most clients begin seeing significant improvements in their online reputation and review volume within 2-4 weeks. The speed of results depends on factors like your current reputation status and customer flow. We provide regular progress reports.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">Can I cancel if I'm not satisfied?</div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Absolutely. Beyond the 30-day money-back guarantee on paid plans, you can cancel your free trial at any time with no obligation. For ongoing paid plans after the first 30 days, you can cancel with 30 days' notice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guarantee-section" id="guarantee-main">
+        <div class="container">
+            <div class="guarantee-content">
+                <div class="guarantee-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="guarantee-text">
+                    <h3 style="color: #000;">Our Unshakeable 100% Satisfaction Guarantee</h3>
+                    <p style="color: #fff;">We're so confident in our program's ability to deliver accelerated review growth and make you a reputation leader that we offer a full 30-day money-back guarantee on all paid plans. If you're not completely satisfied with the results, we'll refund your payment. No questions asked. Try our program risk-free!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col about-col">
+                    <h4>ReputationLeaders</h4>
+                    <p>The premier reputation management service for Columbus businesses, helping you attract more customers and grow your business by becoming the exclusively featured leader in your category.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features" style="color: #fff;">Program Benefits</a></li>
+                        <li><a href="#pricing" style="color: #fff;">Pricing & Free Trial</a></li>
+                        <li><a href="#testimonials" style="color: #fff;">Success Stories</a></li>
+                        <li><a href="#faq" style="color: #fff;">FAQ</a></li>
+                        <li><a href="#form" style="color: #fff;">Apply Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Columbus, OH</li>
+                        <li><i class="fas fa-phone"></i> (614) 555-1234</li>
+                        <li><i class="fas fa-envelope"></i> info@reputationleaders.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri 9am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Columbus Reputation Leaders. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('nav ul');
+
+        if (mobileMenuBtn && navMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isExpanded = navMenu.classList.contains('active');
+                mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
+                mobileMenuBtn.innerHTML = isExpanded ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+        }
+
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href.length > 1 && href.startsWith('#')) {
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        e.preventDefault();
+                        const headerOffset = document.querySelector('header')?.offsetHeight || 76;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        const pricingToggleCheckbox = document.getElementById('pricing-toggle-checkbox');
+        const monthlyLabel = document.querySelector('.pricing-toggle .toggle-label:first-of-type');
+        const annualLabel = document.querySelector('.pricing-toggle .toggle-label:last-of-type');
+        const pricingCards = document.querySelectorAll('.pricing-card .price');
+
+        if (pricingToggleCheckbox) {
+            pricingToggleCheckbox.addEventListener('change', function() {
+                const isAnnual = this.checked;
+                monthlyLabel.classList.toggle('active', !isAnnual);
+                annualLabel.classList.toggle('active', isAnnual);
+
+                pricingCards.forEach(priceElement => {
+                    const monthlyPrice = priceElement.getAttribute('data-monthly');
+                    const annuallyPrice = priceElement.getAttribute('data-annually');
+                    const saveInfoElement = priceElement.querySelector('.save-info');
+
+                    if (isAnnual) {
+                        priceElement.innerHTML = `${annuallyPrice}<span>/month (Billed Annually)</span>`;
+                        if (saveInfoElement) {
+                            const monthlyTotal = parseFloat(monthlyPrice.replace('$', '')) * 12;
+                            const annualTotal = parseFloat(annuallyPrice.replace('$', '')) * 12;
+                            const savings = monthlyTotal - annualTotal;
+                            const percentageSavings = Math.round((savings / monthlyTotal) * 100);
+                            if (savings > 0) {
+                                priceElement.innerHTML += `<span class="save-info">Save $${savings.toFixed(0)} (~${percentageSavings}%)</span>`;
+                            }
+                        }
+                    } else {
+                        priceElement.innerHTML = `${monthlyPrice}<span>/month</span>`;
+                         if (saveInfoElement) { // Clear save info if it exists and we switch to monthly
+                            const existingSaveInfo = priceElement.querySelector('.save-info');
+                            if(existingSaveInfo) existingSaveInfo.remove();
+                         }
+                    }
+                });
+            });
+        }
+
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionItem = header.parentElement;
+                const accordionContent = header.nextElementSibling;
+                const currentlyActive = header.classList.contains('active');
+
+                accordionHeaders.forEach(otherHeader => {
+                    if (otherHeader !== header && otherHeader.classList.contains('active')) {
+                        otherHeader.classList.remove('active');
+                        otherHeader.nextElementSibling.style.maxHeight = null;
+                        otherHeader.nextElementSibling.style.paddingTop = null;
+                        otherHeader.nextElementSibling.style.paddingBottom = null;
+                    }
+                });
+
+                if (currentlyActive) {
+                    header.classList.remove('active');
+                    accordionContent.style.maxHeight = null;
+                    accordionContent.style.paddingTop = null;
+                    accordionContent.style.paddingBottom = null;
+                } else {
+                    header.classList.add('active');
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+                    setTimeout(() => {
+                        if(header.classList.contains('active')){
+                            accordionContent.style.paddingTop = "15px";
+                            accordionContent.style.paddingBottom = "15px";
+                        }
+                    }, 50);
+                }
+            });
+        });
+
+        const testimonialTrack = document.querySelector('.testimonial-track');
+        const testimonials = document.querySelectorAll('.testimonial');
+        let currentTestimonialIndex = 0;
+
+        function showTestimonial(index) {
+            if (testimonialTrack && testimonials.length > 0) { // Check testimonials.length
+                const itemWidth = testimonials[0].offsetWidth;
+                const margin = parseInt(getComputedStyle(testimonials[0]).marginLeft) + parseInt(getComputedStyle(testimonials[0]).marginRight);
+                testimonialTrack.style.transform = `translateX(-${index * (itemWidth + margin)}px)`;
+            }
+        }
+
+        function nextTestimonial() {
+            if (testimonials.length > 0) { // Check testimonials.length
+                currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+                showTestimonial(currentTestimonialIndex);
+            }
+        }
+
+        if (testimonials.length > 1) {
+            showTestimonial(0);
+            setInterval(nextTestimonial, 7000);
+        } else if (testimonialTrack && testimonials.length === 1) {
+            testimonialTrack.style.justifyContent = 'center';
+        }
+
+
+        const form = document.getElementById('applicationForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                
+                // Simple validation message box (replaces alert)
+                const createMessageBox = (title, message, isError = false) => {
+                    const existingMessageBox = document.getElementById('customMessageBox');
+                    if (existingMessageBox) existingMessageBox.remove();
+
+                    const messageBox = document.createElement('div');
+                    messageBox.id = 'customMessageBox';
+                    messageBox.style.position = 'fixed';
+                    messageBox.style.top = '20px';
+                    messageBox.style.left = '50%';
+                    messageBox.style.transform = 'translateX(-50%)';
+                    messageBox.style.padding = '15px 25px';
+                    messageBox.style.backgroundColor = isError ? 'var(--accent-red)' : 'var(--dark-green-bg)'; // Assuming you might add --accent-red
+                    messageBox.style.color = 'var(--white)';
+                    messageBox.style.border = `1px solid ${isError ? 'var(--accent-red-dark)' : 'var(--primary-green)'}`;
+                    messageBox.style.borderRadius = '8px';
+                    messageBox.style.boxShadow = '0 4px 15px rgba(0,0,0,0.2)';
+                    messageBox.style.zIndex = '2000';
+                    messageBox.style.textAlign = 'center';
+                    messageBox.style.fontSize = '1.1rem';
+                    messageBox.innerHTML = `<h4>${title}</h4><p>${message}</p>`;
+                    document.body.appendChild(messageBox);
+
+                    setTimeout(() => {
+                        if (document.getElementById('customMessageBox')) {
+                             document.body.removeChild(messageBox);
+                        }
+                    }, 5000);
+                };
+
+                if (!name || !email) {
+                    createMessageBox('Error', 'Please fill in all required fields: Name and Email.', true);
+                    return;
+                }
+                
+                createMessageBox('Thank You!', 'Your application has been submitted. A representative will contact you within 24 hours.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
